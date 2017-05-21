@@ -262,7 +262,7 @@ console.log(ev);
 </script>
 </head>
 <body>
-<div id="jogadores">jogadores</div>
+<div id="jogadores"></div>
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" width="200px" height="100px" style="color:blue">blablalba</div>
 
 

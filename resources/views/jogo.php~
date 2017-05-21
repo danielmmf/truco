@@ -17,8 +17,8 @@ body {
 
 .carta {
   background-color: white;
-  height: 390px;
-  width: 250px;
+  height: 195px;
+  width: 125px;
   border-radius: 15px;
   padding: 15px;
   box-sizing: content-box;
@@ -40,31 +40,31 @@ body {
 
 .naip-number, .naip-sign {
   display:block;
-  width: 30px;
+  width: 15px;
   text-align: center;
 }
 
 .naip-number {
-  font-size: 45px; 
+  font-size: 25px; 
   font-family: 'Roboto Slab', serif;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .naip-sign {
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .carta-miolo {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 125px;
 }
 
 /*--------- Miolo 1 -----------*/
 .miolo-1 {
   text-align: center;
   line-height: 390px;
-  font-size: 120px;
+  font-size: 60px;
 }
 
 /*--------- Miolo 2 -----------*/
@@ -228,11 +228,32 @@ body {
   right:0;
 }
 </style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
 </head>
 <body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+
 <div class="baralho">
 		  	<!-- carta A / Paus -->
-		  	<div class="carta">
+		  	<div class="carta" draggable="true"
+ondragstart="drag(event)">
 		    	<div class="naip-area naip-top">
 		      		<span class="naip-number">A</span>
 		      		<span class="naip-sign">&clubs;</span>
@@ -248,25 +269,11 @@ body {
 		    	</div>
 		  	</div>
 
-		  	<!-- carta 1 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">1</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">1</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="carta-miolo miolo-1">
-		      		<span>&clubs;</span>
-		    	</div>
-		  	</div>
+		  	
 
 		  	<!-- carta 2 / Paus -->
-		  	<div class="carta">
+		  	<div class="carta" draggable="true"
+ondragstart="drag(event)">
 		    	<div class="naip-area naip-top">
 		      		<span class="naip-number">2</span>
 		      		<span class="naip-sign">&clubs;</span>
@@ -284,7 +291,8 @@ body {
 		  	</div>
 
 		  	<!-- carta 3 / Paus -->
-		  	<div class="carta">
+		  	<div class="carta"s draggable="true"
+ondragstart="drag(event)">
 		    	<div class="naip-area naip-top">
 		      		<span class="naip-number">3</span>
 		      		<span class="naip-sign">&clubs;</span>
@@ -302,68 +310,11 @@ body {
 		    	</div>
 		  	</div>
 
-		  	<!-- carta 4 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">4</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
+		  	
 
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">4</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
+		  
 
-		    	<div class="carta-miolo miolo-4">
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		    	</div>
-		  	</div>
-
-		  	<!-- carta 5 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">5</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">5</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="carta-miolo miolo-5">
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		    	</div>
-		  	</div>
-
-		  	<!-- carta 6 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">6</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">6</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="carta-miolo miolo-6">
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		    	</div>
-		  	</div>
+		  	
 		</div>
 </body>
 </html>
