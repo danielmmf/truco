@@ -248,22 +248,7 @@ body {
 		    	</div>
 		  	</div>
 
-		  	<!-- carta 1 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">1</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">1</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="carta-miolo miolo-1">
-		      		<span>&clubs;</span>
-		    	</div>
-		  	</div>
+		  	
 
 		  	<!-- carta 2 / Paus -->
 		  	<div class="carta">
@@ -302,68 +287,11 @@ body {
 		    	</div>
 		  	</div>
 
-		  	<!-- carta 4 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">4</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
+		  	
 
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">4</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
+		  
 
-		    	<div class="carta-miolo miolo-4">
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		    	</div>
-		  	</div>
-
-		  	<!-- carta 5 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">5</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">5</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="carta-miolo miolo-5">
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		    	</div>
-		  	</div>
-
-		  	<!-- carta 6 / Paus -->
-		  	<div class="carta">
-		    	<div class="naip-area naip-top">
-		      		<span class="naip-number">6</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="naip-area naip-bottom">
-		      		<span class="naip-number">6</span>
-		      		<span class="naip-sign">&clubs;</span>
-		    	</div>
-
-		    	<div class="carta-miolo miolo-6">
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		      		<span class="naip-miolo">&clubs;</span>
-		    	</div>
-		  	</div>
+		  	
 		</div>
 </body>
 </html>
