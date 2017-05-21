@@ -257,6 +257,7 @@ function drop(ev) {
 alert(ev);
 console.log(ev);
     var data = ev.dataTransfer.getData("text");
+ev.dataTransfer.dropEffect = 'move';
     ev.target.appendChild(document.getElementById(data));
 }
 </script>
